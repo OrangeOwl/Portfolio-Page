@@ -1,0 +1,151 @@
+/* Importing Fonts (you can use other fonts if you like) */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+
+/* Font and headers */
+
+/* Orange color is default: #ff7000, find and replace with your favourite color instead */
+
+h1 {
+  text-align: center;
+  color: #ff7000;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+  font-family: 'Lemonada', cursive;
+  font-size: 5.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #ff7000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #ff7000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* 'ABOUT ME' collapsible details tag */
+
+details > summary {
+  background-color: white;
+  border-color: #ff7000;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  list-style: none;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+details > summary > * {
+  display: inline;
+}
+
+details > div {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+/* Contact/Site Nav Bar Styling */
+
+.nav ul, .PROJECTS ul{
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.nav li, .PROJECTS li{
+  list-style: none;
+  display: inline;
+  padding: 0.5rem;
+}
+.nav img, .PROJECTS img {
+  transition: transform .2s; /* Animation */
+}
+.nav img:hover, .PROJECTS img:hover{
+  transform: scale(1.2);
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin-top: 0;
+}
+
+/* CSS changes when screen/window becomes too small */
+
+@media only screen and (max-width: 800px) {
+  details > summary {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  details > div {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .PROJECTS li {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* BODY AND FOOTER */
+
+body{
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+footer a{
+  color: #ff7000;
+}
+
+hr {
+  margin-top: 0;
+  padding-top: 0;
+  width: 30%;
+  color: #ff7000;
+}
+button {
+  transition: transform .2s; /* Animation */
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #ff7000;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

@@ -96,7 +96,7 @@ a {
 
 /* CSS changes when screen/window becomes too small */
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   details > summary {
     margin-left: 2rem;
     margin-right: 2rem;

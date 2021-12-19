@@ -111,6 +111,9 @@ a {
   .nav li, .PROJECTS li {
     display: inline-block;
   }
+  button {
+    font-size: 30px;
+  }
 }
 
 /* BODY AND FOOTER */

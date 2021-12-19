@@ -19,7 +19,7 @@ h1 {
   margin-top: 4rem;
   margin-bottom: 0rem;
   font-family: 'Lemonada', cursive;
-  font-size: 4vw;
+  font-size: 60px;
 }
 
 h2 {
@@ -33,13 +33,16 @@ h2 {
 h3 {
   color: #ff7000;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2vw;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 0;
   padding-top: 0;
 }
 
+p {
+  font-size: 20px;
+}
 /* 'ABOUT ME' collapsible details tag */
 
 details > summary {
@@ -96,7 +99,7 @@ a {
 
 /* CSS changes when screen/window becomes too small */
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   details > summary {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -105,11 +108,8 @@ a {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  .PROJECTS li {
+  .nav li, .PROJECTS li {
     display: inline-block;
-  }
-  h1 {
-    font-size: 4.5rem;
   }
 }
 
